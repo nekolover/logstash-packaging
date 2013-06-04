@@ -45,7 +45,7 @@ fi
 LS_USER=logstash
 LS_GROUP=adm
 
-export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=$(readlink -f /etc/alternatives/java | sed "s:bin/java::")
 
 # Directory where the logstash all in one jar lives
 LS_HOME=/usr/share/logstash
@@ -54,7 +54,7 @@ LS_HOME=/usr/share/logstash
 #LS_JAVA_OPTS=
 
 # logstash log directory
-LOG_DIR=/var/log
+LOG_DIR=/var/log/logstash
 
 # logstash configuration (supports file, directory and glob)
 CONF=/etc/logstash

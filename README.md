@@ -12,7 +12,7 @@ file. Alternatively, you can do it manually:
 3) download the all inclusive logstash jar
 
     cd logstash-packaging
-    wget http://logstash.objects.dreamhost.com/release/logstash-1.1.13-flatjar.jar -O usr/share/logstash/logstash.jar
+    wget http://logstash.objects.dreamhost.com/release/logstash-1.1.13-monolithic.jar -O usr/share/logstash/logstash.jar
 
 4) run the following command:
 

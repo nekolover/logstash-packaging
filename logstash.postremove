@@ -1,0 +1,12 @@
+#!/bin/bash
+# Cleaning
+LOGDIR=/var/log/logstash
+
+if id -u logstash >/dev/null 2>&1 ; then
+    userdel -r logstash || true
+fi
+
+rm -rf $LOGDIR
+
+exit 0
+

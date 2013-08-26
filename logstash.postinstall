@@ -1,0 +1,6 @@
+#!/bin/bash
+# Adding logstash to rc2
+insserv logstash
+
+exit 0
+

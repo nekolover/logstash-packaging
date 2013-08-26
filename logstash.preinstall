@@ -6,7 +6,6 @@ useradd -g adm -r -m -d /usr/share/logstash -s /bin/false logstash
 mkdir $LOGDIR
 chown -R logstash:adm $LOGDIR
 chmod -R 775 $LOGDIR
-insserv logstash
 
 exit 0
 

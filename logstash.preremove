@@ -1,0 +1,7 @@
+#!/bin/bash
+# Removing logstash to rc2
+service logstash stop
+insserv -r logstash
+
+exit 0
+
